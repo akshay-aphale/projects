@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Akshay Portfolio Website</title>
+    <link rel="icon" type="image/x-icon" href="Images/IMG_20230325_212237_856.jpg">
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- navgaition menu -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">Portfolio.</a></div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Contact Me</span></div>
+      <div class="text">
+        <div class="contact">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="5cfc95da-4467-46f2-9932-f960555755de">
+            
+                <label for="name">Name:</label><br>
+                <input type="text" placeholder="Name" id="Name" name = "Name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" placeholder="Enter Email" id="Email" name = "Email" required><br>
+                <label for="Phone no.">Mobile no.</label><br>
+                <input type="text" placeholder="mobile.no" id="Phone" name = "Mobile no" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" placeholder="Enter message here" name = "Message" rows="4" required></textarea><br>
+                <div class="h-captcha" data-captcha="true"></div>
+                <input type="submit" value="Submit">
+            </form>
+            <span id="msg"></span>
+        </div>
+        <script src="https://web3forms.com/client/script.js" async defer></script>            
+    </div>
+</section>
+</body>
+</html>
